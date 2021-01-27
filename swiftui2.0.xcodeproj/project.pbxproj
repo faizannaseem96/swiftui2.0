@@ -11,6 +11,12 @@
 		74059E8A25B5552100754F6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74059E8925B5552100754F6E /* Assets.xcassets */; };
 		74059E8D25B5552100754F6E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74059E8C25B5552100754F6E /* Preview Assets.xcassets */; };
 		74059E9825B558C800754F6E /* BubbleTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74059E9725B558C800754F6E /* BubbleTabBar.swift */; };
+		74059EB425B56F3700754F6E /* FoodHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74059EB325B56F3700754F6E /* FoodHome.swift */; };
+		74059EB725B5721D00754F6E /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74059EB625B5721D00754F6E /* Food.swift */; };
+		74059EBA25B572B000754F6E /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74059EB925B572B000754F6E /* CardView.swift */; };
+		74059EBD25B5745200754F6E /* CardHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74059EBC25B5745200754F6E /* CardHeaderView.swift */; };
+		74059EC125B5839900754F6E /* FoodTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74059EC025B5839900754F6E /* FoodTab.swift */; };
+		74059EC425B586E700754F6E /* FoodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74059EC325B586E700754F6E /* FoodViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +26,12 @@
 		74059E8C25B5552100754F6E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		74059E8E25B5552100754F6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74059E9725B558C800754F6E /* BubbleTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleTabBar.swift; sourceTree = "<group>"; };
+		74059EB325B56F3700754F6E /* FoodHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodHome.swift; sourceTree = "<group>"; };
+		74059EB625B5721D00754F6E /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		74059EB925B572B000754F6E /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		74059EBC25B5745200754F6E /* CardHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardHeaderView.swift; sourceTree = "<group>"; };
+		74059EC025B5839900754F6E /* FoodTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTab.swift; sourceTree = "<group>"; };
+		74059EC325B586E700754F6E /* FoodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,10 +64,11 @@
 		74059E8425B5552100754F6E /* swiftui2.0 */ = {
 			isa = PBXGroup;
 			children = (
-				74059E8525B5552100754F6E /* swiftui2_0App.swift */,
+				74059EAE25B56EE100754F6E /* Header with Tabs */,
 				74059E9625B558AB00754F6E /* Bubble Tabbar */,
 				74059E8925B5552100754F6E /* Assets.xcassets */,
 				74059E8E25B5552100754F6E /* Info.plist */,
+				74059E8525B5552100754F6E /* swiftui2_0App.swift */,
 				74059E8B25B5552100754F6E /* Preview Content */,
 			);
 			path = swiftui2.0;
@@ -75,6 +88,43 @@
 				74059E9725B558C800754F6E /* BubbleTabBar.swift */,
 			);
 			path = "Bubble Tabbar";
+			sourceTree = "<group>";
+		};
+		74059EAE25B56EE100754F6E /* Header with Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				74059EB125B56EF600754F6E /* ViewModel */,
+				74059EB025B56EF000754F6E /* Model */,
+				74059EAF25B56EEA00754F6E /* View */,
+			);
+			path = "Header with Tabs";
+			sourceTree = "<group>";
+		};
+		74059EAF25B56EEA00754F6E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				74059EB325B56F3700754F6E /* FoodHome.swift */,
+				74059EB925B572B000754F6E /* CardView.swift */,
+				74059EBC25B5745200754F6E /* CardHeaderView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		74059EB025B56EF000754F6E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				74059EB625B5721D00754F6E /* Food.swift */,
+				74059EC025B5839900754F6E /* FoodTab.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		74059EB125B56EF600754F6E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				74059EC325B586E700754F6E /* FoodViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,8 +196,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74059EB425B56F3700754F6E /* FoodHome.swift in Sources */,
+				74059EB725B5721D00754F6E /* Food.swift in Sources */,
+				74059EC425B586E700754F6E /* FoodViewModel.swift in Sources */,
+				74059EC125B5839900754F6E /* FoodTab.swift in Sources */,
 				74059E8625B5552100754F6E /* swiftui2_0App.swift in Sources */,
 				74059E9825B558C800754F6E /* BubbleTabBar.swift in Sources */,
+				74059EBA25B572B000754F6E /* CardView.swift in Sources */,
+				74059EBD25B5745200754F6E /* CardHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

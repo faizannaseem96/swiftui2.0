@@ -3,7 +3,7 @@
 //  swiftui2.0
 //
 //  Created by Faizan  Naseem on 18/01/2021.
-// 
+//
 
 import SwiftUI
 
@@ -61,7 +61,6 @@ struct BubbleTabBar: View {
                         .onAppear(perform: {
                             if image == tabs.first {
                                 xAxis = reader.frame(in: .global).minX
-                                
                             }
                         })
                     }
